@@ -26,8 +26,8 @@ section#content {
 
 .css-slideshow{
    position: relative;
-   max-width: 495px;
-   height: 370px;
+   max-width: 1000px;
+   height: 500px;
    margin: 5em auto .5em auto;
 }
 .css-slideshow figure{
@@ -50,4 +50,32 @@ section#content {
 }
 .css-slideshow figure{
    opacity:0;
+}
+
+/* * *
+ * How this works: xfade totalrunthroughtime whenimageappears infinite
+ * * */
+figure:nth-child(1) {
+   animation: xfade 16s 8s infinite;
+}
+figure:nth-child(2) {
+   animation: xfade 16s 0s infinite;
+}
+
+@keyframes xfade{
+   0% {
+      opacity: 1;
+   }
+   47.5% { /* this percent should be 2.5 less than below */
+      opacity:1;
+   }
+   50% { /* this percent should be (100/numofimages) */
+      opacity: 0;
+   }
+   98% {
+      opacity:0;
+   }
+   100% {
+      opacity:1;
+   }
 }

@@ -14,16 +14,12 @@
         <article id="slideshow">
             <div class="css-slideshow">
                 <figure>
-                    <img src="img/placeholder1.png">
+                    <img src="img/placeholder1.jpg">
                     <figcaption>This is the first image</figcaption>
                 </figure>
                 <figure>
                     <img src="img/placeholder2.png">
-                    <figcaption>This is the first image</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/placeholder3.png">
-                    <figcaption>This is the first image</figcaption>
+                    <figcaption>This is the second image</figcaption>
                 </figure>
             </div>
         </article>
