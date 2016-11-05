@@ -1,3 +1,13 @@
+header{
+    background-color: #CCC;
+    border-radius: 2em;
+    padding: 1em;
+}
+nav{
+    background-color: #AAA;
+    border-radius: 2em;
+    padding: 1em;
+}
 body {
     width: 90%;
     margin: 0 auto;
@@ -7,9 +17,7 @@ section#content {
     margin: 1%;
 }
 
-
-
-css-slideshow{
+.css-slideshow{
    position: relative;
    max-width: 495px;
    height: 370px;
