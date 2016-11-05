@@ -8,7 +8,31 @@
         <link href="css/theme.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-
+    <?php
+    // include liam's nav and header file //
+    ?>
+    <section id="content">
+        <article id="slideshow"> 
+            <div class="css-slideshow">
+                <figure>
+                    <img src="img/placeholder1.png"> 
+                    <figcaption>This is the first image</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/placeholder2.png"> 
+                    <figcaption>This is the first image</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/placeholder3.png"> 
+                    <figcaption>This is the first image</figcaption>
+                </figure>
+			</div>
+        </article>  
+        <article id="overview">
+        <p>Ignore me do not read me. Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.Ignore me do not read me.</p> 
+        </article>
+    </section>
+    <?php include "footer.php" ?>
     </body>
 </html>
 

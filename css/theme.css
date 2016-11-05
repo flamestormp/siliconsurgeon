@@ -1,0 +1,39 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section#content {
+    margin: 1%;
+}
+
+
+
+css-slideshow{
+   position: relative;
+   max-width: 495px;
+   height: 370px;
+   margin: 5em auto .5em auto;
+}
+.css-slideshow figure{
+   margin: 0;
+   position: absolute;
+}
+.css-slideshow figcaption{
+   position: absolute;
+   top: 0;
+   color: #fff;
+   background: rgba(0,0,0, .3);
+   font-size: .8em;
+   padding: 8px 12px;
+   opacity: 0;
+   transition: opacity .5s;
+}
+.css-slideshow:hover figure figcaption{
+   transition: opacity .5s;
+   opacity: 1;
+}
+.css-slideshow figure{
+   opacity:0;
+}
+ 
