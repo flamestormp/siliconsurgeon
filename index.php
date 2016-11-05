@@ -8,9 +8,7 @@
         <link href="css/theme.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-    <?php
-    // include liam's nav and header file //
-    ?>
+    <?php include "top.php"?>
     <section id="content">
         <article id="slideshow"> 
             <div class="css-slideshow">
@@ -33,6 +31,7 @@
         </article>
     </section>
     <?php include "footer.php" ?>
+=======
     </body>
 </html>
 
