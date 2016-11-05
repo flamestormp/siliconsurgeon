@@ -10,6 +10,7 @@
     <body>
         <?php include "top.php"?>
         <p>this is where we describe ourselves</p>
+        <?php include "footer.php" ?>
     </body>
 </html>
 

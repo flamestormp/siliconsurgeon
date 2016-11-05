@@ -10,6 +10,7 @@
     <body>
         <?php include "top.php"?>
         <p>this is where you can fill out a form to contact us</p>
+        <?php include "footer.php" ?>
     </body>
 </html>
 

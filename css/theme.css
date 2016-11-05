@@ -1,12 +1,18 @@
-header{
+header,footer{
     background-color: #CCC;
     border-radius: 2em;
     padding: 1em;
 }
 nav{
     background-color: #AAA;
-    border-radius: 2em;
+    border-radius: 1em;
     padding: 1em;
+}
+
+a.nav{
+    background-color: #CCC;
+    border-radius: .5em;
+    padding: .25em;
 }
 
 body {
