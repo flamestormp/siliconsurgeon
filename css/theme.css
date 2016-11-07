@@ -1,7 +1,12 @@
 header,footer{
     background-color: #CCC;
-    border-radius: 2em;
     padding: 1em;
+}
+header{
+    border-radius: 0 0 1em 1em;
+}
+footer{
+    border-radius: 1em 1em 0 0;
 }
 nav{
     background-color: #AAA;
@@ -11,7 +16,6 @@ nav{
 
 a.nav{
     background-color: #CCC;
-    border-radius: .5em;
     padding: .25em;
 }
 
