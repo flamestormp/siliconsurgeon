@@ -21,6 +21,10 @@
                     <img src="img/placeholder2.png">
                     <figcaption>This is the second image</figcaption>
                 </figure>
+                <figure>
+                    <img src="img/placeholder3.jpg">
+                    <figcaption>This is the third image></figcaption>
+                </figure>
             </div>
         </article>
         <article id="overview">
