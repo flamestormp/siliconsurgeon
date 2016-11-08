@@ -14,15 +14,21 @@
         <article id="slideshow">
             <div class="css-slideshow">
                 <figure>
-                    <img src="img/placeholder1.jpg">
+                    <a href="services.php#mobile">
+                        <img src="img/placeholder1.jpg"> 
+                    </a>
                     <figcaption>This is the first image</figcaption>
                 </figure>
                 <figure>
-                    <img src="img/placeholder2.png">
+                    <a href="services.php#repair">
+                        <img src="img/placeholder2.png">
+                    </a>
                     <figcaption>This is the second image</figcaption>
                 </figure>
                 <figure>
-                    <img src="img/placeholder3.jpg">
+                    <a href="services.php#networking">
+                        <img src="img/placeholder3.jpg">
+                    </a>
                     <figcaption>This is the third image></figcaption>
                 </figure>
             </div>

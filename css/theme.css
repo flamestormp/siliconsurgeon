@@ -77,12 +77,14 @@ figure:nth-child(3) {
 @keyframes xfade{
    0% {
       opacity: 1;
+      z-index: 999;
    }
    31.5% { /* this percent should be 2.5 less than below */
       opacity:1;
    }
    34% { /* this percent should be (100/numofimages) */
       opacity: 0;
+      z-index: -1;
    }
    98% {
       opacity:0;
