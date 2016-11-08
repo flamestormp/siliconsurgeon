@@ -37,7 +37,7 @@ section#content {
    position: relative;
    max-width: 1000px;
    height: 500px;
-   margin: 5em auto .5em auto;
+   margin: auto auto .5em auto;
 }
 .css-slideshow figure{
    margin: 0;
