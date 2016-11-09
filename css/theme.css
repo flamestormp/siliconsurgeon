@@ -14,6 +14,10 @@ nav{
     padding: 1em;
 }
 
+div#contactform{
+    float:left;
+}
+
 nav>p {
   margin: 0;
   float: right;
