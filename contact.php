@@ -20,6 +20,9 @@ if($path_parts['filename'] == "form") {
     include "lib/mail-message.php";
 }
 print "<!-- finished including libraries -->";
+print "<pre>";
+print_r($_POST);
+print "</pre>";
 $thisURL = $domain . $phpSelf;
 
 /** Form Variables **/
