@@ -7,6 +7,7 @@ function sendMail($to, $cc, $bcc, $from, $subject, $message) {
     $to = filter_var($to, FILTER_SANITIZE_EMAIL);
     $cc = filter_var($cc, FILTER_SANITIZE_EMAIL);
     $bcc = filter_var($bcc, FILTER_SANITIZE_EMAIL);
+
     $subject = htmlentities($subject,ENT_QUOTES,"UTF-8");
 
     if(empty($to)) return false;
@@ -19,6 +20,7 @@ function sendMail($to, $cc, $bcc, $from, $subject, $message) {
     if(empty($from)) return false;
     if(empty($subject)) return false;
     if(empty($message)) return false;
+
     if(strlen($message) < $MIN_MESSAGE_LENGTH) return false;
 
     $messageTop = '<html><head><title>' . $subject . '</title></head><body>';
@@ -28,6 +30,7 @@ function sendMail($to, $cc, $bcc, $from, $subject, $message) {
     $headers .= "From: " . $from . "\r\n";
     if ($cc!="") $headers .= "CC: " . $cc . "\r\n";
     if ($bcc!="") $headers .= "Bcc: " . $bcc . "\r\n";
+
     $blnMail = mail($to, $subject, $mailMessage, $headers);
     return $blnMail;
 }
