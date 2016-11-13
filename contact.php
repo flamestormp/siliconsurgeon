@@ -7,19 +7,27 @@
         <meta name="description"
             content="We provide the best treatement for your electronics!" >
         <link href="css/theme.css" type="text/css" rel="stylesheet" />
-    </head>
-    <body>
-
 <?php
-include "top.php";
+$domain = "//";
+$server = htmlentities($_SERVER['SERVER_NAME'], ENT_QUOTES, "UTF-8");
+$domain .= $server;
+$phpSelf = htmlentities($_SERVER['PHP_SELF'], ENT_QUOTES, "UTF-8");
+$path_parts = pathinfo($phpSelf);
 print "<!-- include libraries -->";
 require_once('lib/security.php');
-if($path_parts['filename'] == "form") {
+if($path_parts['filename'] == "contact") {
     print "<!-- include form libraries -->";
     include "lib/validation-functions.php";
     include "lib/mail-message.php";
 }
 print "<!-- finished including libraries -->";
+?>
+
+    </head>
+    <body>
+
+<?php
+include "top.php";
 print "<pre>";
 print_r($_POST);
 print "</pre>";
@@ -39,7 +47,6 @@ $errorMsg = array();
 $dataRecord = array();
 
 $mailed = false;
-
 /** Form Processing **/
 if (isset($_POST["Send"])) {
     if (!securityCheck($thisURL)) {
@@ -77,14 +84,15 @@ if (isset($_POST["Send"])) {
         $file = fopen($filename, 'a');
         fputcsv($file, $dataRecord);
         fclose($file);
-
         //* COME UP WITH A MESSAGE TO DISPLAY AND EMAIL LATER *//
-        $message = "";
+        $message = "testmessage: this needs to be longer than 40 characters
+            for some god damn reason. This fact costed phillip lots of time
+                debugging and inflicted major psychological damage. ";
 
         /*******************************************************/
         $to = $email;
         $cc = "";
-        $bcc = "bcc";
+        $bcc = "";
         $from = "Silicon Surgeon Support
             <noreply@pnguyen4.w3.uvm.edu>"; // for testing
 
@@ -135,7 +143,13 @@ $mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
                 <label>Message: </label><br>
                 <textarea name="message" id="message" cols="50" rows="20">
                 <?php print $txtMessage; ?></textarea><br>
-                <input type="submit" tabindex="1000" value="Send">
+                <input
+                    type="submit"
+                    tabindex="1000"
+                    class="button"
+                    name="Send"
+                    id="Send"
+                    value="Send">
                 </div>
                 <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2847.4351803440086!2d-73.11537868455066!3d44.46525180755847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cca79b35d290fdd%3A0x1c3cf1c6a6fc0c13!2s1015+Industrial+Ave%2C+Williston%2C+VT+05495!5e0!3m2!1sen!2sus!4v1478630386301" width="500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
             </fieldset>
