@@ -36,11 +36,13 @@ $thisURL = $domain . $phpSelf;
 /** Form Variables **/
 $name = "";
 $email = "";
+$txtsubject = "";
 $txtMessage = "";
 
 /** Error Variables **/
 $nameERROR = false;
 $emailERROR = false;
+$txtsubjectERROR = false;
 $txtMessageERROR = false;
 
 $errorMsg = array();
@@ -59,6 +61,8 @@ if (isset($_POST["Send"])) {
     $dataRecord[] = $name;
     $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
     $dataRecord[] = $email;
+    $txtsubject = htmlentities($_POST["txtsubject"], ENT_QUOTES, "UTF-8");
+    $dataRecord[] = $txtsubject;
     $txtMessage = htmlentities($_POST["message"], ENT_QUOTES, "UTF-8");
     $dataRecord[] = $txtMessage;
 
@@ -77,7 +81,11 @@ if (isset($_POST["Send"])) {
         $errorMsg[] = "Your email address seems to be incorrect";
         $emailERROR = true;
     }
-
+    if ($txtsubject == "") {
+    	$errorMsg[] = "Please select a subject!";
+    	$txtsubjectERROR = true;
+    } 
+ 
     /** Process Form **/
     if (!$errorMsg) {
         $filename = "data/submissions.csv";
@@ -128,18 +136,19 @@ $mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
                     placeholder="Enter your email address"
                     value="<?php print $email; ?>"
                     ><br>
-                <!--
-                <label for="txtSubject">Subject: </label><br>
-                <input
-                    type="text"
-                    tabindex="300"
-                    maxlength="500"
-                    id="txtSubject"
-                    name="txtSubject"
-                    onfocus="this.select()"
-                    placeholder="Anything else you would like to tell us?"
-                    ><br>
-                ***** This would better be off as a listbox -->
+		        <label for="txtsubject">Subject:</label><br>
+		        <select id="txtubject"
+		                name="txtsubject"
+		                tabindex="200">
+		        <option <?php if($txtsubject=="mobile") print " selected "; ?>
+		            value="mobile">Mobile Device</option>
+		        <option <?php if($txtsubject=="computer") print " selected "; ?>
+		            value="computer">Computer Repair</option>
+		        <option <?php if($txtsubject=="network") print " selected "; ?>
+		            value="network">Network Setup</option>
+		        <option <?php if($txtsubject=="other") print " selected "; ?>
+		            value="other">Other</option>
+		        </select><br>
                 <label>Message: </label><br>
                 <textarea name="message" id="message" cols="50" rows="20">
                 <?php print $txtMessage; ?></textarea><br>
