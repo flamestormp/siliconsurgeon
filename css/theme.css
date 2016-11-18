@@ -1,21 +1,21 @@
-header,footer{
+header,footer {
     background-color: #CCC;
     padding: 1em;
 }
-header{
+
+header {
     border-radius: 0 0 1em 1em;
 }
-footer{
+
+footer {
     border-radius: 1em 1em 0 0;
+    clear: both;
 }
-nav{
+
+nav {
     background-color: #AAA;
     border-radius: 1em;
     padding: 1em;
-}
-
-div#contactform{
-    float:left;
 }
 
 nav>p {
