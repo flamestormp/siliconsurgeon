@@ -1,33 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Silicon Surgeon - Contact Us</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Silicon Surgeon Inc.">
-        <meta name="description"
-            content="We provide the best treatement for your electronics!" >
-        <link href="css/theme.css" type="text/css" rel="stylesheet" />
-<?php
-$domain = "//";
-$server = htmlentities($_SERVER['SERVER_NAME'], ENT_QUOTES, "UTF-8");
-$domain .= $server;
-$phpSelf = htmlentities($_SERVER['PHP_SELF'], ENT_QUOTES, "UTF-8");
-$path_parts = pathinfo($phpSelf);
-print "<!-- include libraries -->";
-require_once('lib/security.php');
-if($path_parts['filename'] == "contact") {
-    print "<!-- include form libraries -->";
-    include "lib/validation-functions.php";
-    include "lib/mail-message.php";
-}
-print "<!-- finished including libraries -->";
-?>
-
-    </head>
+    <?php include 'top.php'?>
     <body>
 
 <?php
-include "top.php";
 print "<pre>";
 print_r($_POST);
 print "</pre>";
