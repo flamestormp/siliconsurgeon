@@ -37,8 +37,8 @@ nav>p {
 
 p.home {
     width: 90%;
-    text-align: center;
     margin: 0 auto;
+    text-indent: 3%;
 }
 
 a.nav{
@@ -66,14 +66,23 @@ section#content {
 
 .css-slideshow{
     position: relative;
-    max-width: 1000px;
-    height: 500px;
-    margin: auto auto .5em auto;
+    width: 900px;
+    height: 450px;
+    margin: 0px auto;
+    text-align: center;
 }
 .css-slideshow figure{
     margin: 0;
+    max-width: 100%;
+    height: auto;
     position: absolute;
 }
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
 .css-slideshow figcaption{
     position: absolute;
     top: 0;
