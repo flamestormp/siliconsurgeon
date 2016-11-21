@@ -1,8 +1,11 @@
 header,footer {
-    background-color: #CCC;
+    background-color: #4A2D74;
     padding: 1em;
 }
 
+h1#title,p#footer{
+    color:white;
+}
 header {
     border-radius: 0 0 1em 1em;
 }
@@ -13,19 +16,28 @@ footer {
 }
 
 nav {
-    background-color: #AAA;
+    background-color: #694F90;
     border-radius: 1em;
     padding: 1em;
 }
 
 nav>p {
-  margin: 0;
-  float: right;
+    margin: 0;
+    float: right;
 }
 
 a.nav{
-    background-color: #CCC;
+    background-color: #8E79AD;
     padding: .25em;
+    border-radius: .25em;
+    color: black;
+}
+
+a.nav:hover,a#activepage{
+    border-bottom: thick solid;
+    text-decoration: none;
+    background-color: #4A2D74;
+    color: white;
 }
 
 body {
@@ -38,62 +50,62 @@ section#content {
 }
 
 .css-slideshow{
-   position: relative;
-   max-width: 1000px;
-   height: 500px;
-   margin: auto auto .5em auto;
+    position: relative;
+    max-width: 1000px;
+    height: 500px;
+    margin: auto auto .5em auto;
 }
 .css-slideshow figure{
-   margin: 0;
-   position: absolute;
+    margin: 0;
+    position: absolute;
 }
 .css-slideshow figcaption{
-   position: absolute;
-   top: 0;
-   color: #fff;
-   background: rgba(0,0,0, .3);
-   font-size: .8em;
-   padding: 8px 12px;
-   opacity: 0;
-   transition: opacity .5s;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    background: rgba(0,0,0, .3);
+    font-size: .8em;
+    padding: 8px 12px;
+    opacity: 0;
+    transition: opacity .5s;
 }
 .css-slideshow:hover figure figcaption{
-   transition: opacity .5s;
-   opacity: 1;
+    transition: opacity .5s;
+    opacity: 1;
 }
 .css-slideshow figure{
-   opacity:0;
+    opacity:0;
 }
 
 /* * *
  * How this works: xfade totalrunthroughtime whenimageappears infinite
  * * */
 figure:nth-child(1) {
-   animation: xfade 18s 0s infinite;
+    animation: xfade 18s 0s infinite;
 }
 figure:nth-child(2) {
-   animation: xfade 18s 6s infinite;
+    animation: xfade 18s 6s infinite;
 }
 figure:nth-child(3) {
-   animation: xfade 18s 12s infinite;
+    animation: xfade 18s 12s infinite;
 }
 
 @keyframes xfade{
-   0% {
-      opacity: 1;
-      z-index: 999;
-   }
-   31.5% { /* this percent should be 2.5 less than below */
-      opacity:1;
-   }
-   34% { /* this percent should be (100/numofimages) */
-      opacity: 0;
-      z-index: -1;
-   }
-   98% {
-      opacity:0;
-   }
-   100% {
-      opacity:1;
-   }
+    0% {
+        opacity: 1;
+        z-index: 999;
+    }
+    31.5% { /* this percent should be 2.5 less than below */
+        opacity:1;
+    }
+    34% { /* this percent should be (100/numofimages) */
+        opacity: 0;
+        z-index: -1;
+    }
+    98% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
 }
