@@ -35,13 +35,13 @@
         </article>
         <article id="overview">
         <h1 id="flair"> Personal  *  Home  *  Business </h1>
-        <p>We are here for all kinds of customers! From individual to enterprise,
+        <p class="home">We are here for all kinds of customers! From individual to enterprise,
         we have your back! Silicon Surgeon is operationally a straightforward
         service: bring us the problem and consider it resolved. Our diagosis will
         be right to the point and our treatment will cure you of all your
         technical ails!
         </p>
-        <p>Ignore me do not read me. Ignore me do not read me.Ignore me do not
+        <p class="home">Ignore me do not read me. Ignore me do not read me.Ignore me do not
          read me.Ignore me do not read me.Ignore me do not read me.Ignore me do
          not read me.Ignore me do not read me.Ignore me do not read me.Ignore
          me do not read me.Ignore me do not read me.Ignore me do not read me.

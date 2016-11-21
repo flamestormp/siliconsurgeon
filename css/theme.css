@@ -35,6 +35,12 @@ nav>p {
     float: right;
 }
 
+p.home {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
 a.nav{
     background-color: #8E79AD;
     padding: .25em;
