@@ -3,6 +3,14 @@ header,footer {
     padding: 1em;
 }
 
+#flair {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    word-spacing: 150%;
+    font-size: 1.5em;
+}
+
 header {
     border-radius: 0 0 1em 1em;
 }
@@ -29,7 +37,7 @@ a.nav{
 }
 
 body {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
