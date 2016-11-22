@@ -39,6 +39,8 @@ p.home {
     width: 90%;
     margin: 0 auto;
     text-indent: 3%;
+    padding-bottom: 1%;
+    font-size: 18px;
 }
 
 a.nav{
@@ -64,26 +66,27 @@ section#content {
     margin: 1%;
 }
 
-.css-slideshow{
+.css-slideshow {
+    width: 60em;
+    height: 30em;
     position: relative;
-    width: 900px;
-    height: 450px;
-    margin: 0px auto;
-    text-align: center;
-}
-.css-slideshow figure{
-    margin: 0;
     max-width: 100%;
-    height: auto;
-    position: absolute;
+    margin: 0px auto;
 }
 
 img {
     height: auto;
-    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
-.css-slideshow figcaption{
+
+.css-slideshow figcaption {
     position: absolute;
     top: 0;
     color: #fff;
@@ -93,11 +96,11 @@ img {
     opacity: 0;
     transition: opacity .5s;
 }
-.css-slideshow:hover figure figcaption{
+.css-slideshow:hover figure figcaption {
     transition: opacity .5s;
     opacity: 1;
 }
-.css-slideshow figure{
+.css-slideshow figure {
     opacity:0;
 }
 
@@ -114,7 +117,7 @@ figure:nth-child(3) {
     animation: xfade 18s 12s infinite;
 }
 
-@keyframes xfade{
+@keyframes xfade {
     0% {
         opacity: 1;
         z-index: 999;
