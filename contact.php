@@ -2,7 +2,8 @@
 <html lang="en">
     <?php include 'top.php'?>
     <body>
-
+        <div id="wrap">
+        <div id="main">
 <?php
 print "<pre>";
 print_r($_POST);
@@ -60,8 +61,8 @@ if (isset($_POST["Send"])) {
     if ($txtsubject == "") {
     	$errorMsg[] = "Please select a subject!";
     	$txtsubjectERROR = true;
-    } 
- 
+    }
+
     /** Process Form **/
     if (!$errorMsg) {
         $filename = "data/submissions.csv";
@@ -137,6 +138,8 @@ $mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
                     value="Send">
             </fieldset>
         </form>
+        </div>
+        </div>
         <?php include "footer.php" ?>
     </body>
 </html>

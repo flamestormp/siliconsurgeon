@@ -2,6 +2,8 @@
 <html lang="en">
     <?php include "top.php"?>
     <body>
+        <div id="wrap">
+        <div id="main">
         <article id="mobile">
             <h2>Mobile Device Diagnostics</h2>
             <p>
@@ -163,6 +165,8 @@
          Ignore me do not read me.Ignore me do not read me.Ignore me do not
          read me.Ignore me do not read me.Ignore me do not read me. </p>
         </article>
+        </div>
+        </div>
         <?php include "footer.php" ?>
     </body>
 </html>
