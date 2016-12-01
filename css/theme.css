@@ -87,26 +87,6 @@ section#content {
     margin: 1%;
 }
 
-.css-slideshow {
-    padding-top: 1%;
-    width: 60em;
-    height: 30em;
-    position: relative;
-    max-width: 90%;
-    margin: 0px auto;
-}
-
-img.slideshow {
-    height: auto;
-    width: 100%;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
 #abouthead {
     margin-left: 6%;
     margin-top: 2%;
@@ -153,7 +133,27 @@ aside.about > p {
     margin: 1em;
 }
 
-/* .css-slideshow figcaption {
+.css-slideshow {
+    padding: 1% 0% 0% 0%;
+    width: 60em;
+    height: 30em;
+    position: relative;
+    max-width: 90%;
+    margin: 0px auto 0px auto;
+}
+
+img.slideshow {
+    height: auto;
+    width: 100%;
+    /* position: absolute; */
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.css-slideshow figcaption {
     position: absolute;
     top: 0;
     color: #fff;
@@ -162,15 +162,18 @@ aside.about > p {
     padding: 8px 12px;
     opacity: 0;
     transition: opacity .5s;
-} */
+}
 
-/* .css-slideshow:hover figure figcaption {
+.css-slideshow:hover figure figcaption {
     transition: opacity .5s;
     opacity: 1;
-} */
+}
 
 .css-slideshow figure {
-    opacity:0;
+    opacity: 0;
+    margin: 0;
+    max-width: 100%;
+    position: absolute;
 }
 
 /* * *

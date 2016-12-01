@@ -14,23 +14,28 @@
             print "<p style='text-align: center;padding-top:1%;'><i>\"".$list[$rand][1]."\"</i></p>";
         ?>
         <section id="content">
+            <article id="slideshow">
             <div class="css-slideshow">
                <figure>
                     <a href="services.php#mobile">
                         <img class="slideshow" src="img/placeholder1.jpg">
                     </a>
+                    <figcaption></figcaption>
                 </figure>
                 <figure>
                     <a href="services.php#repair">
                         <img class="slideshow" src="img/placeholder2.png">
-                        </a>
+                    </a>
+                    <figcaption></figcaption>
                 </figure>
                 <figure>
                     <a href="services.php#networking">
                         <img class="slideshow" src="img/placeholder3.jpg">
                     </a>
+                    <figcaption></figcaption>
                 </figure>
             </div>
+            </article>
             <article id="overview">
                 <h1 id="flair"> Personal  *  Home  *  Business </h1>
                 <p class="home">We are here for all kinds of customers! Whether
