@@ -16,21 +16,26 @@ h1#title,p#footer{
 }
 
 header {
-    border-radius: 0 0 1em 1em;
+   /* border-radius: 0 0 1em 1em; */
 }
 
 footer {
     height: 30px;
     margin-top: -30px;
     position: relative;
-    border-radius: 1em 1em 0 0;
+    /* border-radius: 1em 1em 0 0; */
     clear: both;
 }
 
 nav {
     background-color: #694F90;
-    border-radius: 1em;
+    /* border-radius: 1em; */
     padding: 1em;
+}
+
+p {
+    word-spacing: 20%;
+    line-height: 150%;
 }
 
 nav>p {
@@ -39,17 +44,17 @@ nav>p {
 }
 
 p.home {
-    width: 90%;
+    width: 75%;
     margin: 0 auto;
     text-indent: 3%;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     font-size: 18px;
 }
 
 a.nav{
     background-color: #8E79AD;
     padding: .25em;
-    border-radius: .25em;
+    /* border-radius: .25em; */
     color: black;
 }
 
@@ -60,11 +65,17 @@ a.nav:hover,a#activepage{
     color: white;
 }
 
-* {margin:0;padding:0;}
+* {
+    margin:0;
+    padding:0;
+}
 
-html { height: 85%;}
+html {
+    height: 85%;
+}
 
 body {
+    background-color: #333333;
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -75,6 +86,7 @@ section#content {
 }
 
 .css-slideshow {
+    padding-top: 1%;
     width: 60em;
     height: 30em;
     position: relative;
@@ -94,23 +106,23 @@ img.slideshow {
 }
 
 #abouthead {
-    text-align: center;
+    margin-left: 6%;
+    margin-top: 2%;
+    margin-bottom: -2%;
 }
 
 img.profile {
-    width: 10%;
-    position: absolute;
-    padding: 2%;
+    width: 20%;
+    padding: 2% 2% 0% 2%;
     margin-left: 4%;
     float: left;
 }
 
-article.about > h2 {
-    text-align: center;
-}
-
 #wrap {
     min-height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #EEE;
 }
 
 #main {
@@ -120,8 +132,23 @@ article.about > h2 {
 
 aside.about {
     width: 70%;
+    margin-bottom: 5%;
     padding: 2%;
-    margin-left: 20%;
+}
+
+aside.about > p {
+    margin-top: 2%;
+    padding: 0 0 0 6%;
+}
+
+#testimonials {
+    padding: 2%;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+#testimonials > p {
+    margin: 1em;
 }
 
 /* .css-slideshow figcaption {

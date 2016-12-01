@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php include 'top.php' ?>
-    <body>
         <div id="wrap">
         <div id="main">
+        <?php
+            $myFile = fopen("data/testimonials.csv", "r") or die("Unable to open file!");
+            while(!feof($myFile)) {
+                $list[] = fgetcsv($myFile);
+            }
+            fclose($myFile);
+            $index = count($list)-2;
+            $rand = mt_rand(0, $index);
+            print "<p style='text-align: center;padding-top:1%;'><i>\"".$list[$rand][1]."\"</i></p>";
+        ?>
         <section id="content">
-            <article id="slideshow">
-                <div class="css-slideshow">
-                    <figure>
-                        <a href="services.php#mobile">
-                            <img class="slideshow" src="img/placeholder1.jpg">
+            <div class="css-slideshow">
+               <figure>
+                    <a href="services.php#mobile">
+                        <img class="slideshow" src="img/placeholder1.jpg">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="services.php#repair">
+                        <img class="slideshow" src="img/placeholder2.png">
                         </a>
-                    </figure>
-                    <figure>
-                        <a href="services.php#repair">
-                            <img class="slideshow" src="img/placeholder2.png">
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="services.php#networking">
-                            <img class="slideshow" src="img/placeholder3.jpg">
-                        </a>
-                    </figure>
-                </div>
-            </article>
+                </figure>
+                <figure>
+                    <a href="services.php#networking">
+                        <img class="slideshow" src="img/placeholder3.jpg">
+                    </a>
+                </figure>
+            </div>
             <article id="overview">
                 <h1 id="flair"> Personal  *  Home  *  Business </h1>
                 <p class="home">We are here for all kinds of customers! Whether

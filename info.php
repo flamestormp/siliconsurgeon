@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php include "top.php"?>
-    <body>
         <div id="wrap">
         <div id="main">
 	<aside id="form-right">

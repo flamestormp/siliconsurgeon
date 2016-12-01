@@ -21,6 +21,7 @@
           content="We provide the best treatement for your electronics!" >
     <link href="css/theme.css" type="text/css" rel="stylesheet" />
 </head>
+<body>
 <header>
     <h1 id="title">Silicon Surgeon</h1>
 </header>
@@ -67,5 +68,13 @@ if ($debug) {
        }
        ?>
        >About Us</a>
-    <p> Call Us! 1-802-555-5555 </p>
+    <a href="testimonials.php" class="nav"
+        <?php
+        if ($path_parts['filename'] == 'testimonials') {
+            print 'id="activepage"';
+        }
+        ?>
+    >Testimonials</a>
+
+    <p style="color: #CCC;"> Phone: 1-802-555-5555 </p>
 </nav>
