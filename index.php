@@ -20,19 +20,19 @@
                     <a href="services.php#mobile">
                         <img class="slideshow" src="img/placeholder1.jpg">
                     </a>
-                    <figcaption></figcaption>
+                    <figcaption>Mobile Device Diagnostics</figcaption>
                 </figure>
                 <figure>
                     <a href="services.php#repair">
                         <img class="slideshow" src="img/placeholder2.png">
                     </a>
-                    <figcaption></figcaption>
+                    <figcaption>Computer Repair</figcaption>
                 </figure>
                 <figure>
                     <a href="services.php#networking">
                         <img class="slideshow" src="img/placeholder3.jpg">
                     </a>
-                    <figcaption></figcaption>
+                    <figcaption>Network Setup</figcaption>
                 </figure>
             </div>
             </article>

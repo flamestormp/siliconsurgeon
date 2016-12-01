@@ -4,7 +4,7 @@
         <div id="wrap">
         <div id="main">
         <article id="testimonials">
-        <h1>Reviews and Testomonials</h1>
+        <h1>Reviews and Testimonials</h1>
         <br/>
         <hr/>
         <?php

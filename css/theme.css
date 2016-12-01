@@ -11,6 +11,10 @@ header,footer {
     font-size: 1.5em;
 }
 
+h1#title{
+    font-size: 50px;
+}
+
 h1#title,p#footer{
     color:white;
 }
@@ -18,7 +22,7 @@ h1#title,p#footer{
 header {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
-   /* border-radius: 0 0 1em 1em; */
+    /* border-radius: 0 0 1em 1em; */
 }
 
 footer {
@@ -40,6 +44,10 @@ p {
     line-height: 150%;
 }
 
+article{
+    margin: 30px;
+}
+
 nav>p {
     margin: 0;
     float: right;
@@ -56,8 +64,9 @@ p.home {
 a.nav{
     background-color: #8E79AD;
     padding: .25em;
-    /* border-radius: .25em; */
+    border-radius: .25em;
     color: black;
+    font-size: large;
 }
 
 a.nav:hover,a#activepage{
