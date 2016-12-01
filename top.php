@@ -76,5 +76,5 @@ if ($debug) {
         ?>
     >Testimonials</a>
 
-    <p style="color: #CCC;"> Phone: 1-802-555-5555 </p>
+    <p style="color: #EEE;"> 1-802-555-5555 </p>
 </nav>

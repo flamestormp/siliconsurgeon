@@ -38,7 +38,7 @@
                     enterprise, we will have your back! Silicon Surgeon is
                     operationally a straightforward service: bring us the
                     problem and consider it resolved. We promise to avoid the
-                    jargon altogether and speak in terms the average person
+                    lingo altogether and speak in terms the average person
                     would understand. Our diagosis will be right to the point
                     and the treatment will cure all your technological ails!
                     Overprescribing not our style, so you can be sure that you
