@@ -19,6 +19,27 @@ h1#title,p#footer{
     color:white;
 }
 
+iframe{
+    margin: 1em 3em;
+}
+
+h2{
+    margin: 1em 1em 0 1em;
+}
+
+input#Send{
+    font-size: medium;
+    padding: .3em;
+}
+
+input#Send:hover{
+    font-weight: bold;
+}
+
+fieldset{
+    padding: 1em;
+}
+
 header {
     padding-top: 1.5em;
     padding-bottom: 1.5em;

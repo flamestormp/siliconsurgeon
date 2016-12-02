@@ -4,9 +4,9 @@
         <div id="wrap">
         <div id="main">
 <?php
-print "<pre>";
+/*print "<pre>";
 print_r($_POST);
-print "</pre>";
+print "</pre>";*/
 $thisURL = $domain . $phpSelf;
 
 /** Form Variables **/
