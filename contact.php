@@ -120,9 +120,13 @@ if (isset($_POST["Send"])) {
         fputcsv($file, $dataRecord);
         fclose($file);
         //* COME UP WITH A MESSAGE TO DISPLAY AND EMAIL LATER *//
-        $message = "testmessage: this needs to be longer than 40 characters
-            for some god damn reason. This fact costed phillip lots of time
-                debugging and inflicted major psychological damage. ";
+        $rand1 = mt_rand(0,99999);
+        $rand2 = mt_rand(0,99999);
+        $ticket = $rand1.date("Hs").$rand2.date("dm");
+        $message = "Dear ".$title." ".$name.",<br><br>Thank you for choosing Silicon
+            Surgeon for your next operation. Your ticket is currently being
+            processed and we hope to work with you soon!<br><br>From,<br>Silicon
+            Surgeon Support Staff<br><br>Ticket Number: ".$ticket;
 
         /*******************************************************/
         $to = $email;
@@ -131,15 +135,14 @@ if (isset($_POST["Send"])) {
         $from = "Silicon Surgeon Support
             <noreply@pnguyen4.w3.uvm.edu>"; // for testing
 
-$subject = "Thank you, " . $name . ". We will follow up
-with you shortly!";
+$subject = "Silicon Surgeon Ticket ".$ticket;
 $mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
     }
 }
 
 if (isset($_POST["Send"]) AND empty($errorMsg)) {
     print"<h2>Thank you!</h2>";
-    print "<p>A copy of your ticket has ";
+    print "<p>A copy of your ticket (".$ticket.") has ";
     if (!$mailed) {
         print "not ";
     }
