@@ -24,11 +24,27 @@ h1#title,p#footer{
 }
 
 iframe{
-    margin: 1em 3em;
+    clear: both;
+    display: block;
+    width: 90%;
+    margin: 3em auto;
 }
 
-h2{
+.floatleft {
+    float: left;
+    margin: 0 0 2em 5em;
+}
+
+h2 {
     margin: 1em 1em 0 1em;
+}
+
+.floatleft > h2 {
+    margin: 2em 1em 0 0;
+}
+
+h2.tablelabel {
+    margin-left: 2em;
 }
 
 input#Send{
@@ -66,11 +82,17 @@ nav {
 
 p {
     word-spacing: 20%;
+    font-family: sans-serif;
+    letter-spacing: .5px;
     line-height: 150%;
 }
 
+.floatleft > p {
+    line-height: 200%;
+}
+
 article{
-    margin: 30px;
+    margin: 2%;
 }
 
 nav>p {
@@ -174,6 +196,13 @@ aside.about > p {
     position: relative;
     max-width: 90%;
     margin: 0px auto 0px auto;
+}
+
+td, th {
+    padding: 3%;
+    width: 50%;
+    text-align: center;
+    border: solid thin;
 }
 
 img.slideshow {
