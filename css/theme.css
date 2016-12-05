@@ -3,6 +3,10 @@ header,footer {
     padding: 1em;
 }
 
+p{
+    margin: 1em 0;
+}
+
 #flair {
     text-align: center;
     margin-top: 2%;
@@ -166,7 +170,7 @@ aside.about > p {
 .css-slideshow {
     padding: 1% 0% 0% 0%;
     width: 60em;
-    height: 30em;
+    height: 23em;
     position: relative;
     max-width: 90%;
     margin: 0px auto 0px auto;
@@ -174,9 +178,9 @@ aside.about > p {
 
 img.slideshow {
     height: auto;
-    width: 100%;
+    width: 80%;
     /* position: absolute; */
-    margin: auto;
+    margin: 0 10%;
     top: 0;
     bottom: 0;
     right: 0;
