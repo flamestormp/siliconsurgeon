@@ -3,10 +3,6 @@ header,footer {
     padding: 1em;
 }
 
-p{
-    margin: 1em 0;
-}
-
 #flair {
     text-align: center;
     margin-top: 2%;
@@ -80,11 +76,12 @@ nav {
     padding: 1em;
 }
 
-p {
+p,a {
     word-spacing: 20%;
     font-family: sans-serif;
     letter-spacing: .5px;
     line-height: 150%;
+    margin: 1em 0;
 }
 
 .floatleft > p {
