@@ -219,6 +219,7 @@ img.slideshow {
 .css-slideshow figcaption {
     position: absolute;
     top: 0;
+    left: 10%;
     color: #fff;
     background: rgba(0,0,0, .3);
     font-size: .8em;

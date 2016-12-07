@@ -187,7 +187,7 @@ if (isset($_POST["Send"]) AND empty($errorMsg)) {
                     placeholder="Enter your name"
                     value="<?php print $name; ?>"
                     ><br>
-                <p>Preferred Title:</p>
+                <p style="line-height:0;">Preferred Title:</p>
                 <input type="hidden" value="novalue" name="radTitle"/>
                 <input <?php if ($title == "Mr.") print ' checked="checked" ';?>
                     id="radTitleMr"
@@ -232,8 +232,8 @@ if (isset($_POST["Send"]) AND empty($errorMsg)) {
                     value="<?php print $phone; ?>"
                     ><br>
 
-                <p>Preferred Contact Method:</p>
-                <p>(select both if flexible)</p>
+                <p style="line-height:0;">Preferred Contact Method:</p>
+                <p style="line-height:0;">(select both if flexible)</p>
                 <input type="hidden" value="novalue" name="emailPref"/>
                 <input <?php if ($emailPref=="emailPref") print ' checked="checked" '; ?>
                     id="emailPref"
