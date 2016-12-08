@@ -19,21 +19,21 @@ header,footer {
 }
 
 h1, h2 {
-    font-family: Dejavu Sans;
+    font-family: "Dejavu Sans";
 }
 
 form {
-    font-family: Dejavu Sans;
+    font-family: "Dejavu Sans";
 }
 
-h1#title{
-    font-family: Dejavu Sans Mono;
+h1.title{
+    font-family: "Dejavu Sans Mono";
     float: left;
     padding-top: .5em;
     font-size: 3em;
 }
 
-h1#title,p#footer{
+h1.title,p#footer{
     text-align: center;
     color:white;
 }
@@ -53,7 +53,7 @@ h1#title,p#footer{
 
 #contactUs {
     margin: 1% 1em;
-    padding: 0 auto;
+    padding: 2%;
 }
 
 iframe{
@@ -112,7 +112,6 @@ footer {
 }
 
 nav {
-    float: clear;
     background-color: #694F90;
     /* border-radius: 1em; */
     padding: .7em;
@@ -121,7 +120,7 @@ nav {
 
 p,a {
     word-spacing: 20%;
-    font-family: Dejavu Sans;
+    font-family: "Dejavu Sans";
     letter-spacing: .5px;
     line-height: 150%;
     margin: 1em 0;
@@ -177,10 +176,6 @@ body {
     height: 100%;
     width: 80%;
     margin: 0 auto;
-}
-
-section#content {
-    margin: 1%;
 }
 
 #abouthead {

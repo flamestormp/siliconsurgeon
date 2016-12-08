@@ -4,7 +4,7 @@
     <div id="wrap">
         <div id="main">
             <article id="testimonials">
-                <h1>Reviews and Testimonials</h1>
+                <h2 style="margin-left:0;">Reviews and Testimonials</h2>
                 <a href="#sendReview">Submit your own review</a>
                 <br/>
                 <br/>
@@ -63,7 +63,7 @@
                         <fieldset>
                             <textarea name="txtReview" id="message" cols="50" rows="20"></textarea><br>
                             <label for="txtName">
-                                Name (optional): 
+                                Name (optional):
                             </label>
                             <input
                                 type="text"

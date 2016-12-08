@@ -147,13 +147,13 @@ if (isset($_POST["Send"]) AND empty($errorMsg)) {
     }
     print "been sent to: ".$email. "</p>";
 } else {
-    print "<h2>Contact Us Online!</h2>";
+    print "<h2 style='margin-left:3%;'>Contact Us Online!</h2>";
 
     /** 3b: error messages **/
 
     if ($errorMsg) {
         print '<div id="errors">' . "\n";
-        print "<h2>Your Form has the following mistakes that need to be fixed.</h2>\n";
+        print "<h2 style='margin-left:3%;'>Your Form has the following mistakes that need to be fixed.</h2>\n";
         print "<ol>\n";
 
         foreach ($errorMsg as $err) {

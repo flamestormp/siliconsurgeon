@@ -13,8 +13,6 @@
             $rand = mt_rand(0, $index);
             print "<p style='text-align: center;padding-top:1%;'><i>\"".$list[$rand][1]."\"</i></p>";
         ?>
-        <section id="content">
-            <article id="slideshow">
             <div class="css-slideshow">
                <figure>
                     <a href="services.php#mobile">
@@ -35,9 +33,8 @@
                     <figcaption>Network Setup</figcaption>
                 </figure>
             </div>
-            </article>
             <article id="overview">
-                <h1 id="flair"> Personal  *  Home  *  Business </h1>
+                <h2 id="flair"> Personal  *  Home  *  Business </h2>
                 <p class="home">We are here for all kinds of customers! Whether
                     you are a single person, small business, or even a large
                     enterprise, we will have your back! Silicon Surgeon is
@@ -61,7 +58,6 @@
                     Call, contact us online, or stop by for a free quote!
                 </p>
             </article>
-        </section>
         </div>
         </div>
         <?php include "footer.php" ?>

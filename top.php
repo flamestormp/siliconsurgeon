@@ -24,9 +24,9 @@
 <body>
 <header>
     <div style="width:500px; margin: 0 auto; ">
-    <h1 id="title">SILICON</h1>
+    <h1 class="title">SILICON</h1>
     <img id="logo" src="img/logo.png" alt="logo"/>
-    <h1 id="title">SURGEON</h1>
+    <h1 class="title">SURGEON</h1>
     </div>
     <p style="float: right; color: #EEE; overflow: hidden;">1-802-555-5555</p>
 </header>
