@@ -36,14 +36,14 @@
             <article id="overview">
                 <h2 id="flair"> Personal  *  Home  *  Business </h2>
                 <p class="home">We are here for all kinds of customers! Whether
-                    you are a single person, small business, or even a large
+                    you are a single person or family, small business, or even a large
                     enterprise, we will have your back! Silicon Surgeon is
                     operationally a straightforward service: bring us the
                     problem and consider it resolved. We promise to avoid the
                     lingo altogether and speak in terms the average person
-                    would understand. Our diagosis will be right to the point
+                    would understand. Our diagnosis will be right to the point
                     and the treatment will cure all your technological ails!
-                    Overprescribing not our style, so you can be sure that you
+                    Overprescribing is not our style, so you can be sure that you
                     not are paying for more than what you need.
                 </p>
                 <p class="home">
