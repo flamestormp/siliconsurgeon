@@ -7,7 +7,7 @@
     $path_parts = pathinfo($phpSelf);
     print "<!-- include libraries -->";
     require_once('lib/security.php');
-    if ($path_parts['filename'] == "contact") {
+    if ($path_parts['filename'] == "request") {
         print "<!-- include form libraries -->";
         include "lib/validation-functions.php";
         include "lib/mail-message.php";
@@ -23,7 +23,12 @@
 </head>
 <body>
 <header>
-    <h1 id="title">Silicon Surgeon</h1>
+    <div style="width:500px; margin: 0 auto; ">
+    <h1 id="title">Silicon </h1>
+    <img id="logo" src="img/logo.png" alt="logo"/>
+    <h1 id="title">Surgeon</h1>
+    </div>
+    <p style="float: right; color: #EEE;">1-802-555-5555</p>
 </header>
 <?php
 if ($debug) {
@@ -47,6 +52,13 @@ if ($debug) {
     }
     ?>
        >Services</a>
+    <a href="request.php" class="nav"
+    <?php
+    if ($path_parts['filename'] == 'request') {
+        print 'id="activepage"';
+    }
+    ?>
+       >Request</a>
     <a href="contact.php" class="nav"
     <?php
     if ($path_parts['filename'] == 'contact') {
@@ -54,20 +66,13 @@ if ($debug) {
     }
     ?>
        >Contact</a>
-    <a href="info.php" class="nav"
-    <?php
-    if ($path_parts['filename'] == 'info') {
-        print 'id="activepage"';
-    }
-    ?>
-       >Info</a>
     <a href="about.php" class="nav"
        <?php
        if ($path_parts['filename'] == 'about') {
            print 'id="activepage"';
        }
        ?>
-       >About Us</a>
+       >About</a>
     <a href="testimonials.php" class="nav"
         <?php
         if ($path_parts['filename'] == 'testimonials') {
@@ -75,6 +80,4 @@ if ($debug) {
         }
         ?>
     >Testimonials</a>
-
-    <p style="color: #EEE;"> Call us! 1-802-555-5555 </p>
 </nav>
