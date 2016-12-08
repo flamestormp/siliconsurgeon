@@ -141,7 +141,7 @@ $mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
 
 if (isset($_POST["Send"]) AND empty($errorMsg)) {
     print"<h2>Thank you!</h2>";
-    print "<p>A copy of your ticket (".$ticket.") has ";
+    print "<p style='margin-left:2em;'>A copy of your ticket (".$ticket.") has ";
     if (!$mailed) {
         print "not ";
     }
