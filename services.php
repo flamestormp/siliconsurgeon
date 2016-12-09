@@ -4,6 +4,7 @@
     <div id="wrap">
         <div id="main">
             <article id="mobile">
+                <!-- Phone Repair Description -->
                 <h2>Mobile Device Diagnostics</h2>
                 <p>
                     Is your phone running more slowly than it was last year? Is the battery running out before
@@ -20,6 +21,7 @@
                     how difficult your problem is to fix.</b></p>
                 <a href="request.php">Tell us about your problem and we'll schedule an appointment to help</a>
             </article>
+                <!-- Computer Repair Description -->
             <article id="repair">
                 <h2>Computer Repair</h2>
                 <p>
@@ -41,6 +43,7 @@
                 <a href="request.php">Tell us about your problem and we'll give you a time to
                 bring it in</a>
             </article>
+                <!-- Network Services Description -->
             <article id="networking">
                 <h2>Network Setup</h2>
                 <p>

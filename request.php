@@ -119,6 +119,8 @@ if (isset($_POST["Send"])) {
         $file = fopen($filename, 'a');
         fputcsv($file, $dataRecord);
         fclose($file);
+
+        /** Create unique, randomly generated ticket id# **/
         $rand1 = mt_rand(0,99999);
         $rand2 = mt_rand(0,99999);
         $ticket = $rand1.date("Hs").$rand2.date("dm");
@@ -127,18 +129,19 @@ if (isset($_POST["Send"])) {
             processed and we hope to work with you soon!<br><br>From,<br>Silicon
             Surgeon Support Staff<br><br>Ticket Number: ".$ticket;
 
-        /*******************************************************/
+        /** Email **/
         $to = $email;
         $cc = "";
         $bcc = "";
         $from = "Silicon Surgeon Support
-            <noreply@pnguyen4.w3.uvm.edu>"; // for testing
+            <noreply@pnguyen4.w3.uvm.edu>";
 
-$subject = "Silicon Surgeon Ticket ".$ticket;
-$mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
+        $subject = "Silicon Surgeon Ticket ".$ticket;
+        $mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
     }
 }
 
+/** Success Message **/
 if (isset($_POST["Send"]) AND empty($errorMsg)) {
     print"<h2>Thank you!</h2>";
     print "<p style='margin-left:2em;'>A copy of your ticket (".$ticket.") has ";
@@ -149,7 +152,7 @@ if (isset($_POST["Send"]) AND empty($errorMsg)) {
 } else {
     print "<h2 style='margin-left:3%;'>Contact Us Online!</h2>";
 
-    /** 3b: error messages **/
+    /** Error Messages **/
 
     if ($errorMsg) {
         print '<div id="errors">' . "\n";
@@ -163,10 +166,11 @@ if (isset($_POST["Send"]) AND empty($errorMsg)) {
         print "</div>\n";
     }
 ?>
-        <!-- DISPLAY ERRORS HERE OR SUCESS MESSAGE IF NOT FIRST VISIT -->
+        <!-- DISPLAY ERRORS HERE OR SUCCESS MESSAGE IF NOT FIRST VISIT -->
         <form action="<?php print $phpSelf; ?>" id="contactUs" method="post">
             <fieldset class="contactform">
 
+                <!-- hidden input type is to have a consistent amount of data on each line of the csv file -->
                 <input type="hidden" value="notfirst" name="first"/>
                 <input <?php if ($first=="first") print ' checked="checked" '; ?>
                     id="first"
@@ -187,6 +191,7 @@ if (isset($_POST["Send"]) AND empty($errorMsg)) {
                     value="<?php print $name; ?>"
                     ><br>
                 <p style="line-height:0;">Preferred Title:</p>
+                <!-- hidden input type is to have a consistent amount of data on each line of the csv file -->
                 <input type="hidden" value="novalue" name="radTitle"/>
                 <input <?php if ($title == "Mr.") print ' checked="checked" ';?>
                     id="radTitleMr"
@@ -233,6 +238,7 @@ if (isset($_POST["Send"]) AND empty($errorMsg)) {
 
                 <p style="line-height:0;">Preferred Contact Method:</p>
                 <p style="line-height:0;">(select both if flexible)</p>
+                <!-- hidden input type is to have a consistent amount of data on each line of the csv file -->
                 <input type="hidden" value="novalue" name="emailPref"/>
                 <input <?php if ($emailPref=="emailPref") print ' checked="checked" '; ?>
                     id="emailPref"
@@ -276,6 +282,7 @@ if (isset($_POST["Send"]) AND empty($errorMsg)) {
             </fieldset>
         </form>
 <?php
+/** Closes the "else" statement from the block related to success messages **/
 }
 ?>
         </div>
