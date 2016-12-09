@@ -4,6 +4,10 @@
         <div id="wrap">
         <div id="main">
         <?php
+            /*
+             *  This block of php opens testimonials.csv and randomly selects
+             *  one entry to display in a paragraph.
+             */
             $myFile = fopen("data/testimonials.csv", "r") or die("Unable to open file!");
             while(!feof($myFile)) {
                 $list[] = fgetcsv($myFile);
@@ -13,6 +17,7 @@
             $rand = mt_rand(0, $index);
             print "<p style='text-align: center;padding-top:1%;'><i>\"".$list[$rand][1]."\"</i></p>";
         ?>
+            <!-- See css to see how this magic works -->
             <div class="css-slideshow">
                <figure>
                     <a href="services.php#mobile">
@@ -34,6 +39,8 @@
                 </figure>
             </div>
             <article id="overview">
+                <!-- All text has a word spacing of 150%, pargraphs are indented only
+                    on this page -->
                 <h2 id="flair"> Personal  *  Home  *  Business </h2>
                 <p class="home">We are here for all kinds of customers! Whether
                     you are a single person or family, small business, or even a large
