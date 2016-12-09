@@ -10,7 +10,7 @@
                 <p> He may look young, but the sum of his experiences make up a lifetime.
                     Specialized in forensic data recovery and network traffic
                     analysis, but later moved on to study computer science. After a long
-                    and sucessful career as a programmer at several companies, he decided
+                    and successful career as a programmer at several companies, he decided
                     to go back to his roots and work on repairing consumer electronics.
                     Phillip always shows passion and dedication in all his endeavors, but
                     Silicon Surgeon is only the next step in his grand mission.
@@ -19,10 +19,10 @@
             <br>
             <aside class="about">
             <img class="profile" src="img/liam.jpg" alt="Liam Beliveau">
-                <p><strong> Prof. Liam Beliveau </strong></p>
+                <p><strong> Prof. Liam E. Beliveau </strong></p>
                 <p> A keen eye and a sharp intuition makes this fellow the enemy of all bugs.
                     His gut is second to none when it comes to the art of problem solving.
-                    After teaching Informational Technology and Computer Science at the
+                    After teaching Information Technology and Computer Science at the
                     University of Vermont for over a decade, he decided that the classroom
                     wasn't where he wanted to be. He was always the curious type, disassembling
                     computers since the early age of four! Silicon Surgeon exists today because
